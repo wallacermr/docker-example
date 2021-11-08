@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql/mysql-server:8.0.16
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: example_db
+      MYSQL_USER: sys_admin
+      MYSQL_PASSWORD: pass_admin
+    ports:
+      - 3306:3306
